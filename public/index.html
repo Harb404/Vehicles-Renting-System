@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vehicle Rental System</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div id="auth" class="hidden">
+  <div id="loginBox" class="login"><h1>🚗 Vehicle Rental</h1><div id="loginForm"></div>
+    <p style="text-align:center;margin:16px 0 0">New customer? <a id="showReg">Register here</a></p></div>
+  <div id="regBox" class="reg hidden"><h1>🚗 Customer Registration</h1><div id="regForm"></div>
+    <p><a id="showLogin">← Staff login</a></p></div>
+</div>
+<div id="shell" class="hidden">
+  <nav>
+    <strong>🚗 Vehicle Rental</strong>
+    <a href="#dashboard">Dashboard</a><a href="#vehicles">Vehicles</a><a href="#customers">Customers</a>
+    <a href="#reservations">Reservations</a><a href="#rentals">Rentals</a><a href="#reports">Reports</a>
+    <span class="right"><span id="who"></span> · <button id="logout">Logout</button></span>
+  </nav>
+  <main id="view"></main>
+</div>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body></html>
